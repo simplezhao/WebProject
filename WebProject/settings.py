@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'WebProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'WebProject',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
+        'NAME': 'a9project',
+        'USER': 'zjnumyj',
+        'PASSWORD': 'wdmmFM2015&db',
+        'HOST': 'rm-bp17j4n871wa5o5yobo.mysql.rds.aliyuncs.com',
         'PORT': '3306',
     }
 }
