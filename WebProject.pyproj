@@ -83,6 +83,7 @@
     <Folder Include="WebProject\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\scripts\d3.min.js" />
     <Content Include="app\static\image\1.png" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
