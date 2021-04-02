@@ -21,29 +21,32 @@ class Errordata(models.Model):
 
     class Meta:
         db_table = 'errordata'
-
+        verbose_name_plural = '问题数据'
 
 class Station(models.Model):
-    id = models.CharField(primary_key=True, max_length=255)
+    station_id = models.CharField(primary_key=True, max_length=255)
     station_name = models.CharField(max_length=255)
     route = models.CharField(max_length=255)
-    vegion = models.CharField(max_length=255, blank=True, null=True)
+    vegion = models.CharField(max_length=255, blank=True, null=True,verbose_name = '行政区域')
 
     class Meta:
         db_table = 'station'
+        verbose_name_plural = '站点'
 
 
 class Trips(models.Model):
-    user = models.ForeignKey('Users', models.DO_NOTHING, blank=True, null=True)
-    in_name = models.CharField(max_length=255)
-    in_time = models.CharField(max_length=255)
-    out_name = models.CharField(max_length=255)
-    out_time = models.CharField(max_length=255)
-    channel_id = models.CharField(max_length=255)
-    price = models.CharField(max_length=255)
+    trip_id = models.AutoField(primary_key=True)
+    user = models.ForeignKey('Users', models.DO_NOTHING)
+    in_name = models.CharField(max_length=255,verbose_name = '入站名')
+    in_time = models.CharField(max_length=255,verbose_name = '入站时间')
+    out_name = models.CharField(max_length=255,verbose_name = '出站名')
+    out_time = models.CharField(max_length=255,verbose_name = '出站时间')
+    channel_id = models.CharField(max_length=255,verbose_name = '渠道类型')
+    price = models.CharField(max_length=255,verbose_name = '票价')
 
     class Meta:
         db_table = 'trips'
+        verbose_name_plural = '乘车记录'
 
 
 class Users(models.Model):
@@ -54,11 +57,12 @@ class Users(models.Model):
 
     class Meta:
         db_table = 'users'
+        verbose_name_plural = '用户'
 
 
 class Workdays2020(models.Model):
-    number_20200101 = models.CharField(db_column='20200101', primary_key=True, max_length=255)  # Field renamed because it wasn't a valid Python identifier.
-    number_3 = models.CharField(db_column='3', max_length=255)  # Field renamed because it wasn't a valid Python identifier.
+    data = models.CharField(primary_key=True, max_length=255)  # Field renamed because it wasn't a valid Python identifier.
+    value = models.CharField(max_length=255)  # Field renamed because it wasn't a valid Python identifier.
 
     class Meta:
         db_table = 'workdays2020'
