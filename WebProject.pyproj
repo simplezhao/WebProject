@@ -86,7 +86,14 @@
     <Folder Include="WebProject\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="app\static\app\content\index.css" />
+    <Content Include="app\static\app\scripts\chart.js" />
+    <Content Include="app\static\app\scripts\d3.js" />
     <Content Include="app\static\app\scripts\d3.min.js" />
+    <Content Include="app\static\app\scripts\index.js" />
+    <Content Include="app\static\data.json" />
     <Content Include="app\static\image\1.png" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
@@ -239,6 +246,7 @@
     <Content Include="static\admin\js\vendor\xregexp\xregexp.min.js" />
     <Content Include="static\app\content\bootstrap.css" />
     <Content Include="static\app\content\bootstrap.min.css" />
+    <Content Include="static\app\content\index.css" />
     <Content Include="static\app\content\site.css" />
     <Content Include="static\app\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\app\fonts\glyphicons-halflings-regular.svg" />
@@ -246,6 +254,10 @@
     <Content Include="static\app\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="static\app\scripts\bootstrap.js" />
     <Content Include="static\app\scripts\bootstrap.min.js" />
+    <Content Include="static\app\scripts\chart.js" />
+    <Content Include="static\app\scripts\d3.js" />
+    <Content Include="static\app\scripts\d3.min.js" />
+    <Content Include="static\app\scripts\index.js" />
     <Content Include="static\app\scripts\jquery-1.10.2.js" />
     <Content Include="static\app\scripts\jquery-1.10.2.min.js" />
     <Content Include="static\app\scripts\jquery-1.10.2.min.map" />
@@ -256,6 +268,7 @@
     <Content Include="static\app\scripts\modernizr-2.6.2.js" />
     <Content Include="static\app\scripts\respond.js" />
     <Content Include="static\app\scripts\respond.min.js" />
+    <Content Include="static\data.json" />
     <Content Include="static\image\1.png" />
     <None Include="static\app\scripts\_references.js" />
     <None Include="static\app\scripts\jquery.validate-vsdoc.js" />
