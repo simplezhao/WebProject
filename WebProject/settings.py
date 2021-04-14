@@ -118,3 +118,6 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 #存放图片文件的根目录
 MEDIA_ROOT =r"C:\Users\DELL\source\repos\WebProject\static\media" 
 #os.path.join(BASE_DIR,'static/media')
+import mimetypes
+mimetypes.add_type('text/css', '.css')
+mimetypes.add_type('application/javascript', '.js')
