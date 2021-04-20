@@ -1,8 +1,8 @@
 export default class Chart {
     constructor(){
-        this._width = 1200;
-        this._height = 500;
-        this._margins = {top:30, left:10, right:10, bottom:10};
+        this._width = 500;
+        this._height = 300;
+        this._margins = {top:0, left:10, right:0, bottom:0};
         this._data = [];
         this._scaleX = null;
         this._scaleY = null;
@@ -10,7 +10,7 @@ export default class Chart {
         this._box = null;
         this._svg = null;
         this._body = null;
-        this._padding = {top:10, left:10, right:10, bottom:10};
+        this._padding = {top:0, left:0, right:0, bottom:0};
     }
 
     width(w){
@@ -121,7 +121,7 @@ export default class Chart {
 
     renderChart(){
         if (!this._box){
-            this._box = d3.select('.calendar')
+            this._box = d3.select('#main2')
                             .append('div')
                             .attr('class','box');
         }
