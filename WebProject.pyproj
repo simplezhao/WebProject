@@ -46,6 +46,18 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="io126\126出.py" />
+    <Compile Include="io126\126进.py" />
+    <Compile Include="io126\admin.py" />
+    <Compile Include="io126\apps.py" />
+    <Compile Include="io126\migrations\__init__.py" />
+    <Compile Include="io126\models.py" />
+    <Compile Include="io126\tests.py" />
+    <Compile Include="io126\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="io126\views.py" />
+    <Compile Include="io126\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="WebProject\__init__.py" />
     <Compile Include="WebProject\settings.py" />
@@ -63,6 +75,10 @@
     <Folder Include="app\static\image\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="io126\" />
+    <Folder Include="io126\migrations\" />
+    <Folder Include="io126\templates\" />
+    <Folder Include="io126\templates\io126\" />
     <Folder Include="static\" />
     <Folder Include="static\admin\" />
     <Folder Include="static\admin\css\" />
@@ -95,6 +111,10 @@
     <Content Include="app\static\app\scripts\index.js" />
     <Content Include="app\static\data.json" />
     <Content Include="app\static\image\1.png" />
+    <Content Include="app\templates\app\analysis.html" />
+    <Content Include="io126\templates\io126\126出.html" />
+    <Content Include="io126\templates\io126\126进.html" />
+    <Content Include="io126\templates\io126\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

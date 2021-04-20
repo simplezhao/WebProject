@@ -66,3 +66,4 @@ class Workdays2020(models.Model):
 
     class Meta:
         db_table = 'workdays2020'
+

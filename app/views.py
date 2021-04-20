@@ -44,3 +44,7 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+
+def analysis(request):
+    return render(request, 'app/analysis.html')
