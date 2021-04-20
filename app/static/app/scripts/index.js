@@ -6,19 +6,19 @@ d3.json('../../static/data.json').then(function(data){
     /* ----------------------------配置参数------------------------  */
     const chart = new Chart();
     const config = {
-        margins: {top: 30, left: 30, bottom: 30, right: 30},
+        margins: {top: 0, left: 0, bottom: 0, right: 0},
         textColor: 'black',
-        title: '客流量日历热力图',
+        // title: '客流量日历热力图',
         hoverColor: 'red',
         startTime: '2018-01-01',
         endTime: '2018-12-31',
-        cellWidth: 18,
-        cellHeight: 18,
+        cellWidth: 7,
+        cellHeight: 10,
         cellPadding: 1,
         cellColor1: 'white',
         cellColor2: 'green',
         lineColor: 'yellow',
-        lineWidth: 2
+        lineWidth: 1
     }
 
     chart.margins(config.margins);
@@ -198,7 +198,7 @@ d3.json('../../static/data.json').then(function(data){
         function debounce(fn, time){
             let timeId = null;
             return function(){
-                const context = this;
+                const context = this;x
                 const event = d3.event;
                 timeId && clearTimeout(timeId)
                 timeId = setTimeout(function(){
