@@ -18,7 +18,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint, TensorBoard,EarlyStoppin
 from tensorflow.keras.models import Model
 from tensorflow import keras
 from tensorflow.keras.utils import plot_model
-from tensorflow.keras.utils import multi_gpu_model
+#from tensorflow.keras.utils import multi_gpu_model
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import statsmodels.tsa.api as smt
@@ -37,7 +37,7 @@ session = InteractiveSession(config=config)
 # In[67]:
 
 
-df_weather = pd.read_excel(r'C:\Users\hyh\python代码\三种机器学习方法\站点预测\data\城市天气数据(1).xls')
+df_weather = pd.read_excel(r'C:\Users\DELL\source\repos\WebProject\io126\data\CityWeather.xls')
 
 
 # # 转换日期
@@ -128,7 +128,7 @@ df_tw
 # In[77]:
 
 
-df = pd.read_excel(r'C:\Users\hyh\python代码\三种机器学习方法\站点预测\data\data.xlsx')
+df = pd.read_excel(r'C:\Users\DELL\source\repos\WebProject\io126\data\data.xlsx')
 
 
 # In[78]:

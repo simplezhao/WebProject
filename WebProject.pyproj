@@ -104,6 +104,8 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="io126\" />
     <Folder Include="io126\migrations\" />
+    <Folder Include="io126\data\" />
+    <Folder Include="io126\images\" />
     <Folder Include="io126\templates\" />
     <Folder Include="io126\templates\io126\" />
     <Folder Include="lstm_predict\" />
@@ -157,6 +159,9 @@
     <Content Include="app\static\data.json" />
     <Content Include="app\static\image\1.png" />
     <Content Include="app\templates\app\analysis.html" />
+    <Content Include="io126\data\CityWeather.xls" />
+    <Content Include="io126\data\data.xlsx" />
+    <Content Include="io126\images\embedding_lstm.png" />
     <Content Include="io126\templates\io126\126出.html" />
     <Content Include="io126\templates\io126\126进.html" />
     <Content Include="io126\templates\io126\index.html" />
