@@ -18,7 +18,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint, TensorBoard,EarlyStoppin
 from tensorflow.keras.models import Model
 from tensorflow import keras
 from tensorflow.keras.utils import plot_model
-from tensorflow.keras.utils import multi_gpu_model
+#from tensorflow.keras.utils import multi_gpu_model
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import statsmodels.tsa.api as smt
