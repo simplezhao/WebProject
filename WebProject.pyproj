@@ -106,6 +106,8 @@
     <Content Include=".gitignore" />
     <Content Include="app\static\app\content\index.css" />
     <Content Include="app\static\app\scripts\chart.js" />
+    <Content Include="app\static\app\scripts\chartMap.js" />
+    <Content Include="app\static\app\scripts\china.js" />
     <Content Include="app\static\app\scripts\d3.js" />
     <Content Include="app\static\app\scripts\d3.min.js" />
     <Content Include="app\static\app\scripts\index.js" />
