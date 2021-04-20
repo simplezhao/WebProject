@@ -61,7 +61,7 @@ class Users(models.Model):
 
 
 class Workdays2020(models.Model):
-    data = models.CharField(primary_key=True, max_length=255)  # Field renamed because it wasn't a valid Python identifier.
+    date = models.CharField(primary_key=True, max_length=255)  # Field renamed because it wasn't a valid Python identifier.
     value = models.CharField(max_length=255)  # Field renamed because it wasn't a valid Python identifier.
 
     class Meta:

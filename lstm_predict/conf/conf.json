@@ -1,0 +1,5 @@
+{
+    "MODEL_NAME": "lstm-flow-predict-service",
+    "MODEL_VERSION": 0.1,
+    "APP_NAME": "lstm-flow-predict"
+}
