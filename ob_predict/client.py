@@ -33,5 +33,5 @@ class HttpClient():
         return res
 
 if __name__ == "__main__":
-    client=HttpClient("127.0.0.1", "6008", "kalman-od-predict")
+    client=HttpClient("0.0.0.0", "6008", "kalman-od-predict")
     client.request(request_id="test", od_pair="Sta134-Sta63", mode="predict_future")

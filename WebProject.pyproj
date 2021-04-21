@@ -85,6 +85,9 @@
     <Compile Include="ob_predict\primitives.py" />
     <Compile Include="ob_predict\start_server.py" />
     <Compile Include="ob_predict\tests.py" />
+    <Compile Include="ob_predict\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ob_predict\views.py" />
     <Compile Include="ob_predict\__init__.py" />
     <Compile Include="WebProject\__init__.py" />

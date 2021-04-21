@@ -8,6 +8,8 @@ Command-line utility for administrative tasks.
 
 import os
 import sys
+from flask import Flask
+from flask_script import Manager
 
 if __name__ == '__main__':
     os.environ.setdefault(
