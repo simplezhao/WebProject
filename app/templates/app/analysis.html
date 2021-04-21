@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 整理所有
 云码资源淘宝店铺  大数据可视化大屏模板专家
 -->
@@ -31,6 +31,26 @@
 </head>
 <!--青岛研锦网络科技有限公司版权所有-->
 <body class="ksh">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">轨道交通智慧客流分析预测</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'analysis' %}">Analysis</a></li>
+                    <li><a href="{% url 'in_126' %}">126出</a></li>
+                </ul>
+                {% include 'app/loginpartial.html' %}
+            </div>
+        </div>
+    </div>
 	<div id="load">
 		<div class="load_img"><!-- 加载动画 -->
 			<img class="jzxz1" src="../../static/app/images/jzxz1.png">

@@ -10,19 +10,6 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-class Errordata(models.Model):
-    user_id = models.CharField(max_length=255, blank=True, null=True)
-    in_name = models.CharField(max_length=255, blank=True, null=True)
-    in_time = models.CharField(max_length=255, blank=True, null=True)
-    out_name = models.CharField(max_length=255, blank=True, null=True)
-    out_time = models.CharField(max_length=255, blank=True, null=True)
-    route_id = models.CharField(max_length=255, blank=True, null=True)
-    price = models.CharField(max_length=255, blank=True, null=True)
-
-    class Meta:
-        db_table = 'errordata'
-        verbose_name_plural = '问题数据'
-
 class Station(models.Model):
     station_id = models.CharField(primary_key=True, max_length=255)
     station_name = models.CharField(max_length=255)
@@ -38,11 +25,11 @@ class Trips(models.Model):
     trip_id = models.AutoField(primary_key=True)
     user = models.ForeignKey('Users', models.DO_NOTHING)
     in_name = models.CharField(max_length=255,verbose_name = '入站名')
-    in_time = models.CharField(max_length=255,verbose_name = '入站时间')
+    date_in = models.CharField(max_length=255,verbose_name = '入站时间')
     out_name = models.CharField(max_length=255,verbose_name = '出站名')
-    out_time = models.CharField(max_length=255,verbose_name = '出站时间')
-    channel_id = models.CharField(max_length=255,verbose_name = '渠道类型')
-    price = models.CharField(max_length=255,verbose_name = '票价')
+    date_out = models.CharField(max_length=255,verbose_name = '出站时间')
+    channel_id = models.IntegerField(verbose_name = '渠道类型')
+    price = models.IntegerField(verbose_name = '票价')
 
     class Meta:
         db_table = 'trips'
