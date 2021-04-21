@@ -1,0 +1,5 @@
+{
+    "MODEL_NAME": "kalman-od-predict-service",
+    "MODEL_VERSION": 0.1,
+    "APP_NAME": "kalman-od-predict"
+}

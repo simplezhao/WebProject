@@ -5,7 +5,9 @@ Definition of views.
 # -*- coding: UTF-8 -*-
 from datetime import datetime
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpRequest,JsonResponse
+from .models import Workdays2020
+import json
 
 def home(request):
     """Renders the home page."""
@@ -48,3 +50,8 @@ def about(request):
 
 def analysis(request):
     return render(request, 'app/analysis.html')
+
+def getCalendarData(request):
+    data = models.Workdays2020.objects.values('date', 'value')
+    json_data = serializers.serialize('json', data)
+    return JsonResponse(list(json_data), safe=False)
